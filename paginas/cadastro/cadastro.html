@@ -42,9 +42,30 @@
             <div class="content">
                 <h2>Cadastro de Brinquedos</h2>
                 <hr>
+                    <div class="formleft">
                     <form action="">
-                        <input type="text">Nome
-                        <input type="text">Descrição
+                        <label for="nome">Nome</label>
+                        <input type="text" name="nome">
+                        <label for="descricao">Descrição</label>
+                        <input type="text" name="descricao">
+                    </div>
+                    <div class="formright">
+                        <label for="tipo">Tipo</label>
+                        <select name="tipo" id="">
+                            <option selected></option>
+                            <option value="">Inflável</option>
+                            <option value="">Escorregador</option>
+                            <option value="">Carrosel</option>
+                        </select>
+                        <label for="validade">Validade</label>
+                        <input type="date" name="validade">
+                        <label for="quantidade">Quantidade</label>
+                        <input type="number" name="validade">
+                        <label for="manutencao">Precisa de Manutenção</label>
+                        <input type="checkbox" name="manutencao">
+                    </div>
+                        <input type="button" value="Cancelar">
+                        <input type="submit" value="Cadastrar">             
 
                     </form>
                 
