@@ -1,85 +1,88 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=devie-width, initial-scale=1.0">
-        <title>Giga Kids</title>
-        <link rel="stylesheet" href="estilocadastro.css" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    </head>
 
-    <body>
-        <div class="all-div">
-            <div class="box">
-                <div>
-                    <img src="img/logogiga.png" alt="" class="logo">
-                </div>
-                <div class="list">
-                    <ul>
-                        <li class="dashboard">
-                            <div class="icon-back"><i class="bi bi-bar-chart-line-fill"></i></div><span>Dashboard</span>
-                        </li>
-                        <li>
-                            <div class="icon-back"><i class="bi bi-pencil-square"></i></div><span>Cadastrar</span>
-                        </li>
-                        <li>
-                            <div class="icon-back"><i class="bi bi-cash-coin"></i></div><span>Vendas</span>
-                        </li>
-                        <li>
-                            <div class="icon-back"><i class="bi bi-calendar-check"></i></div><span>Calendário</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=devie-width, initial-scale=1.0">
+    <title>Giga Kids</title>
+    <link rel="stylesheet" href="estilocadastro.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
 
-            <div class="navbar">
-                  
+<body>
+    <div class="all-div">
+        <div class="box">
+            <div>
+                <img src="img/logogiga.png" alt="" class="logo">
             </div>
+            <div class="list">
+                <ul>
+                    <li class="dashboard">
+                        <div class="icon-back"><i class="bi bi-bar-chart-line-fill"></i></div><span>Dashboard</span>
+                    </li>
+                    <li>
+                        <div class="icon-back"><i class="bi bi-pencil-square"></i></div><span>Cadastrar</span>
+                    </li>
+                    <li>
+                        <div class="icon-back"><i class="bi bi-cash-coin"></i></div><span>Vendas</span>
+                    </li>
+                    <li>
+                        <div class="icon-back"><i class="bi bi-calendar-check"></i></div><span>Calendário</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="navbar">
 
         </div>
 
-        <div class="container">
-            <div class="content">
-                <div class="tittle">
-                    <h2>Cadastro de Brinquedos</h2>
-                    <hr>
-                </div>
-                <form action="">
-                    <div class="formAll">
-                            <div class="formbase">
-                                <div class="formleft">
-                                    <label for="nome">Nome</label>
-                                    <input type="text" name="nome">
-                                    <label for="descricao">Descrição</label>
-                                    <input type="text" name="descricao">
-                                </div>
-                                <div class="formright">
-                                    <label for="tipo">Tipo</label>
-                                    <select name="tipo" id="">
-                                        <option selected></option>
-                                        <option value="">Inflável</option>
-                                        <option value="">Escorregador</option>
-                                        <option value="">Carrosel</option>
-                                    </select>
-                                    <label for="validade">Validade</label>
-                                    <input type="date" name="validade">
-                                    <label for="quantidade">Quantidade</label>
-                                    <input type="number" name="validade">
-                                    <div class="checkbox">
-                                        <label for="manutencao">Precisa de Manutenção</label>
-                                        <input type="checkbox" name="manutencao">
-                                    </div>
+    </div>
+
+    <div class="container">
+        <div class="content">
+            <div class="tittle">
+                <h2>Cadastro de Brinquedos</h2>
+                <hr>
+            </div>
+            <form action="">
+                <div class="formAll">
+                    <div class="formbase">
+                        <div class="formleft">
+                            <label for="nome">Nome</label>
+                            <input type="text" name="nome">
+                            <label for="descricao">Descrição</label>
+                            <input type="text" name="descricao">
+                        </div>
+                        <div class="formright" style="justify-content: space-between;">
+                            <div class="divrightform">
+                                <label for="tipo">Tipo</label>
+                                <select name="tipo" id="">
+                                    <option selected></option>
+                                    <option value="">Inflável</option>
+                                    <option value="">Escorregador</option>
+                                    <option value="">Carrosel</option>
+                                </select>
+                                <label for="validade">Validade</label>
+                                <input type="date" name="validade">
+                                <label for="quantidade">Quantidade</label>
+                                <input type="number" name="validade">
+                                <div class="check">
+                                    <label for="manutencao">Precisa de Manutenção</label>
+                                    <input class="checkbox" type="checkbox" name="manutencao">
                                 </div>
                             </div>
-                            <div class="botoes">
+                            <div class="divbotoes">
                                 <input type="button" value="Cancelar">
                                 <input type="submit" value="Cadastrar">
-                            </div>             
+                            </div>
+                        </div>
                     </div>
-                </form>
-                
-            </div>
+                </div>
+            </form>
         </div>
-       
-    </body>
+    </div>
+
+</body>
+
 </html>

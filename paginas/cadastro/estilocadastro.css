@@ -78,7 +78,27 @@ span {
     color: #54305c;
     margin-right: 32px;
 }
-
+h2 {
+    margin-left: 80px;
+    color: #FEC92A;
+}
+hr {
+    width: 90%;
+    border-color: #FEC92A;
+}
+input {
+    width: 190px;
+    height: 22px;
+}
+select {
+    width: 198px;
+    height: 25px;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .content {
     margin-top: 140px;
     /* border: solid 1px red; */
@@ -90,70 +110,57 @@ span {
     flex-direction: column;
     align-items: center;
 }
-.container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 .tittle {
     width: 100%;
     align-items: center;
 }
-h2 {
-    margin-left: 80px;
-    color: #FEC92A;
-}
-hr {
-    width: 90%;
-    border-color: #FEC92A;
-}
-input {
-    width: 100px;
-    height: 30px;
-}
-select {
-    width: 100px;
-    height: 30px;
-}
 .formAll {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
     justify-content: center;
-    width: 100%;
-    justify-self: flex-end;;
+    width: 900px !important;
+    height: 422px;
+    /* border: green solid 1px; */
 }
 .formbase {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    width: 90%;
+    justify-content: space-between;
+    width: 80%;
+    height: 422px;
 
 }
 .formleft {
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    width: 50%%;
+
 }
 .formright {
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
-    width: 50%;
-}
-.botoes {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    width: 90%;
-}
-.checkbox {
 
 }
+.divbotoes{
+    display: flex; 
+    flex-direction: row;
+}
+.checkbox {
+    width: 15px;
+    height: 15px;
+}
+.divrightform{
+    display: flex; 
+    flex-direction: column;
+}
+
 div {
-    border: solid 1px red;
+    border: 1px solid red;
+}
+input{
+    background-color: #87698e;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+input:scope{
+    border: #fec92a 1px solid;
 }
