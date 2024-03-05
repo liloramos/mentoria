@@ -86,13 +86,12 @@ hr {
     width: 90%;
     border-color: #FEC92A;
 }
-input {
-    width: 190px;
-    height: 22px;
-}
 select {
-    width: 198px;
-    height: 25px;
+    width: 210px;
+    height: 38px;
+    background-color: #87698e;
+    border: none;
+    border-radius: 7px;
 }
 .container {
     display: flex;
@@ -102,7 +101,7 @@ select {
 .content {
     margin-top: 140px;
     /* border: solid 1px red; */
-    width: 900px;
+    width: 850px;
     height: 500px;
     border-radius: 4ch;
     background-color: #54305c;
@@ -117,7 +116,7 @@ select {
 .formAll {
     display: flex;
     justify-content: center;
-    width: 900px !important;
+    width: 900px;
     height: 422px;
     /* border: green solid 1px; */
 }
@@ -127,40 +126,151 @@ select {
     justify-content: space-between;
     width: 80%;
     height: 422px;
-
 }
 .formleft {
     display: flex;
     flex-direction: column;
-
+    margin-left: 40px;
 }
 .formright {
     display: flex;
     flex-direction: column;
-
+    justify-content: space-between;
 }
 .divbotoes{
     display: flex; 
     flex-direction: row;
 }
-.checkbox {
-    width: 15px;
-    height: 15px;
-}
 .divrightform{
     display: flex; 
     flex-direction: column;
+    margin-right: 50px;
 }
-
 div {
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 input{
     background-color: #87698e;
     border: none;
-    border-radius: 5px;
+    border-radius: 7px;
     padding: 5px;
+    width: 200px;
+    height: 30px;
 }
-input:scope{
-    border: #fec92a 1px solid;
+.cancelar{
+    width: 105px;
+    height: 27px;
+    margin-bottom: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: #FFF;
+    border: 2px solid #F13077;
+    color: #F13077;
+    transition: 200ms ease-in-out;
 }
+.cancelar:hover {
+    color: #FFF;
+    background-color: #F13077;
+}
+.cadastrar{
+    width: 105px;
+    height: 27px;
+    margin-left: 30px;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: #00B4D3;
+    color: #FFF;
+    transition: 200ms ease-in-out;
+}
+.cadastrar:hover{
+    background-color: #0098b2;
+}
+label{
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+    color: #FEC92A;
+}
+.inputfix {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 22px;
+}
+.inputfixed {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 22px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Estilo base para o container do checkbox */
+.custom-checkbox {
+    display: inline-block;
+    margin-top: 10px;
+    padding-left: 5px;
+  }
+  
+  /* Estilizar o input do tipo checkbox */
+  .custom-checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  /* Estilizar o rótulo (label) para criar a aparência do checkbox */
+  .custom-checkbox label {
+    position: relative;
+    padding-left: 30px; /* Adapte o espaçamento conforme necessário */
+    cursor: pointer;
+    display: inline-block;
+    line-height: 20px; /* Ajuste conforme necessário */
+  }
+  
+  /* Estilizar a caixa de seleção (quadrado) */
+  .custom-checkbox label:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 15px; /* Tamanho da caixa de seleção */
+    height: 15px; /* Tamanho da caixa de seleção */
+    border-radius: 5px;
+    background-color: #87698e; /* Cor de fundo da caixa de seleção */
+  }
+  
+  /* Estilizar a marca de seleção (quando o checkbox está marcado) */
+  .custom-checkbox input:checked + label:before {
+    background-color: #007bff; /* Cor de fundo quando marcado */
+    border-color: #007bff; /* Cor da borda quando marcado */
+  }
+  
+  /* Estilizar a marca de seleção (símbolo de visto) */
+  .custom-checkbox label:after {
+    content: "";
+    position: absolute;
+    left: 5px;
+    top: 2px;
+    width: 3px;
+    height: 6px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+    display: none;
+  }
+  
+  /* Exibir a marca de seleção quando o checkbox está marcado */
+  .custom-checkbox input:checked + label:after {
+    display: block;
+  }
+  

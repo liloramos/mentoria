@@ -49,32 +49,40 @@
                 <div class="formAll">
                     <div class="formbase">
                         <div class="formleft">
-                            <label for="nome">Nome</label>
-                            <input type="text" name="nome">
+                            <div class="inputfix">
+                                <label for="nome">Nome</label>
+                                <input required type="text" name="nome" id="nome">
+                            </div>
                             <label for="descricao">Descrição</label>
-                            <input type="text" name="descricao">
+                            <input type="text" name="descricao" id="descricao">
                         </div>
-                        <div class="formright" style="justify-content: space-between;">
+                        <div class="formright">
                             <div class="divrightform">
-                                <label for="tipo">Tipo</label>
-                                <select name="tipo" id="">
-                                    <option selected></option>
-                                    <option value="">Inflável</option>
-                                    <option value="">Escorregador</option>
-                                    <option value="">Carrosel</option>
-                                </select>
-                                <label for="validade">Validade</label>
-                                <input type="date" name="validade">
-                                <label for="quantidade">Quantidade</label>
-                                <input type="number" name="validade">
-                                <div class="check">
-                                    <label for="manutencao">Precisa de Manutenção</label>
-                                    <input class="checkbox" type="checkbox" name="manutencao">
+                                <div class="inputfix">
+                                    <label for="tipo">Tipo</label>
+                                    <select required name="tipo" id="tipo">
+                                        <option selected></option>
+                                        <option value="">Inflável</option>
+                                        <option value="">Escorregador</option>
+                                        <option value="">Carrosel</option>
+                                    </select>
+                                </div>
+                                <div class="inputfixed">
+                                    <label for="validade">Validade</label>
+                                    <input required type="date" name="validade" id="validade">
+                                </div>
+                                <div class="inputfixed">
+                                    <label for="quantidade">Quantidade</label>
+                                    <input required type="number" name="quantidade" min="0" id="quantidade">
+                                </div>
+                                <div class="custom-checkbox">
+                                    <input type="checkbox" id="manutecao" name="manutecao">
+                                    <label for="manutecao">Precisa de Manutenção</label>
                                 </div>
                             </div>
                             <div class="divbotoes">
-                                <input type="button" value="Cancelar">
-                                <input type="submit" value="Cadastrar">
+                                <input class="cancelar" type="button" value="Cancelar">
+                                <input class="cadastrar" type="submit" value="Cadastrar">
                             </div>
                         </div>
                     </div>
@@ -82,7 +90,7 @@
             </form>
         </div>
     </div>
-
+   
 </body>
 
 </html>
