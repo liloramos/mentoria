@@ -54,7 +54,6 @@ i {
     /* border: solid green 1px; */
     margin: 0;
     display: flex;
-    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -157,6 +156,20 @@ input{
     width: 200px;
     height: 30px;
 }
+input[id="descricao"] {
+    height: 106px;
+}
+textarea {
+    background-color: #87698e;
+    border: none;
+    border-radius: 7px;
+    padding: 5px;
+    width: 200px;
+    height: 105px;
+    resize: none;
+    overflow: hidden;
+}
+
 .cancelar{
     width: 105px;
     height: 27px;
@@ -202,6 +215,11 @@ label{
     flex-direction: column;
     margin-bottom: 22px;
 }
+
+
+
+
+
 
 
 
